@@ -1,0 +1,23 @@
+<h2>Reverse String</h2>
+<div>
+    
+    <div>
+        <h3>Enter String to reverse</h3>
+        <input type="text" [(ngModel)]="originalStr">
+    </div>
+    <button (click)="reverse()">Reverse String</button>
+    <div *ngIf="reverseStr">
+        <h3>Reverse String: </h3>
+        <div>{{reverseStr}}</div>
+    </div>
+
+    <div *ngFor="let items of product">
+        <ul>
+            <li>{{items.productName}}</li>
+            <li>{{items.category}}</li>
+            <li>{{items.price}}</li>
+        </ul>
+
+    </div>
+
+</div>
